@@ -24,6 +24,6 @@ class TestGeoLocWrapper(unittest.TestCase):
         pos1 = a.locating("806 National Ave, Las Vegas, NM 87701")
         pos2 = a.locating("215 Grand Ave, Las Vegas, NM 87701")
         gset = a.get_distance_kilometers(pos1, pos2)
-        self.assertEqual(int(gset),int(0.737416295637))
+        self.assertEqual(gset,'0.737416295637')
 if __name__ == '__main__':
     unittest.main()
